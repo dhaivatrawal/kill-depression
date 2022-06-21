@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".One"
+    android:id="@+id/relLayout"
+    android:background="@color/colorPrimary">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cccd"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/a4"
+            android:scaleType="fitXY"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/cccd"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
